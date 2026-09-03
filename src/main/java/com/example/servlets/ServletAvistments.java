@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "demoServlet", value = "/context-demo")
-public class DemoServlet extends HttpServlet {
+public class ServletAvistments extends HttpServlet {
 
     @Override
     public void init() throws ServletException {

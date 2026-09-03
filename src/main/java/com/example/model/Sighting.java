@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class Avistment {
+public class Sighting {
 private int id;
 private String name;
 private String sightingCode;
@@ -12,10 +12,10 @@ private int quantity;
 private int confidenceLevel;
 private int expeditionId;
 
-    public Avistment() {
+    public Sighting() {
     }
 
-    public Avistment(int id, String name, String sightingCode, String description, String scientificName, String sightedAt, String location, int quantity, int confidenceLevel, int expeditionId) {
+    public Sighting(int id, String name, String sightingCode, String description, String scientificName, String sightedAt, String location, int quantity, int confidenceLevel, int expeditionId) {
         this.id = id;
         this.name = name;
         this.sightingCode = sightingCode;

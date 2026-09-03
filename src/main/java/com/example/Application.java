@@ -1,0 +1,13 @@
+package com.example;
+
+import com.example.config.AppConfig;
+import com.example.servlets.ServletExpeditions;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Application {
+    private static final ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    public static ApplicationContext getContext() {
+        return context;
+    }
+}
