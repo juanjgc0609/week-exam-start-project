@@ -26,7 +26,7 @@ public class ServletSightings extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
         resp.getWriter().println("<h1>Avistamientos registrados</h1>");
-        resp.getWriter().println("ul");
+        resp.getWriter().println("<ul>");
         for(Sighting sighting : sightingService.getSightings()){
             resp.getWriter().println("<li>"+ sighting + "</li>");
         }
@@ -36,14 +36,14 @@ public class ServletSightings extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         int id = Integer.parseInt(req.getParameter("id"));
         String name = req.getParameter("name");
-        String sightingCode = req.getParameter("code");
-        String description = req.getParameter("region");
-        String scientificName = req.getParameter("baseCamp");
-        String sightedAt = req.getParameter("leader");
-        String location = req.getParameter("startDate");
-        String quantity = req.getParameter("endDate");
-        String confidenceLevel = req.getParameter("estate");
-        String expeditionId = req.getParameter("estate");
+        String sightingCode = req.getParameter("sightingCode");
+        String description = req.getParameter("description");
+        String scientificName = req.getParameter("scientificName");
+        String sightedAt = req.getParameter("sightedAt");
+        String location = req.getParameter("location");
+        int quantity = Integer.parseInt(req.getParameter("quantity"));
+        int confidenceLevel = Integer.parseInt(req.getParameter("confidenceLevel"));
+        int expeditionId = Integer.parseInt(req.getParameter("expeditionId"));
 
         System.out.println("doPost: " + id + " - " + name);
         Sighting sighting = new Sighting();

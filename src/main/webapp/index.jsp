@@ -39,6 +39,8 @@
             name="estate"
             type="text"
             placeholder="Ejemplo: Activo">
+    <button>Enviar</button>
+
 </form>
 <h2>Registrar Avistamientos</h2>
 <form action="sightings" method="POST">
@@ -82,6 +84,7 @@
             name="expeditionId"
             type="text"
             placeholder="Id expedition">
+    <button>Enviar</button>
 
 
 </form>

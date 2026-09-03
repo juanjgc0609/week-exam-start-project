@@ -107,4 +107,20 @@ private int expeditionId;
     public void setExpeditionId(int expeditionId) {
         this.expeditionId = expeditionId;
     }
+
+    @Override
+    public String toString() {
+        return "Sighting{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sightingCode='" + sightingCode + '\'' +
+                ", description='" + description + '\'' +
+                ", scientificName='" + scientificName + '\'' +
+                ", sightedAt='" + sightedAt + '\'' +
+                ", location='" + location + '\'' +
+                ", quantity=" + quantity +
+                ", confidenceLevel=" + confidenceLevel +
+                ", expeditionId=" + expeditionId +
+                '}';
+    }
 }

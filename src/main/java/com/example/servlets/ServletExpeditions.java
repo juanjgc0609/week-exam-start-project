@@ -24,7 +24,7 @@ public class ServletExpeditions extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
         resp.getWriter().println("<h1>Expediciones registradas</h1>");
-        resp.getWriter().println("ul");
+        resp.getWriter().println("<ul>");
         for(Expedition expedition : expeditionService.getExpeditions()){
             resp.getWriter().println("<li>"+ expedition + "</li>");
         }

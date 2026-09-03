@@ -98,4 +98,19 @@ public class Expedition {
     public void setEstate(String estate) {
         this.estate = estate;
     }
+
+    @Override
+    public String toString() {
+        return "Expedition{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", region='" + region + '\'' +
+                ", baseCamp='" + baseCamp + '\'' +
+                ", leader='" + leader + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", estate='" + estate + '\'' +
+                '}';
+    }
 }
